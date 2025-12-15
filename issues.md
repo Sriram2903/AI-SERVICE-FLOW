@@ -82,19 +82,7 @@ python
 tickets.sort(key=lambda x: x.get("created", ""), reverse=True)
 Result: Newest tickets always first.
 
-🚧 Problem 8: GitHub Web Upload → Local Sync Confusion
-Issue: Files uploaded via GitHub UI → Local changes wouldn't sync.
-Flow: No local git repo → Manual uploads → Version control broken.
-Fix: Proper clone workflow:
-
-bash
-git clone https://github.com/Sriram2903/AI-Service-Flow.git
-cd AI-Service-Flow
-# Now edit files locally and:
-git add . && git commit -m "Update" && git push
-Result: Full git workflow established.
-
-🚧 Problem 9: Voice Assistant Browser Compatibility
+🚧 Problem 8: Voice Assistant Browser Compatibility
 Issue: Microphone button visible but silent in Firefox/Safari.
 Flow: No Web Speech API detection → Broken UX.
 Fix: Feature detection + graceful fallback:
